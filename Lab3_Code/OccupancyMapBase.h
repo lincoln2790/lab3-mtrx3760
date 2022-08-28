@@ -59,8 +59,8 @@ class COccupancyMapBase
 
   private:
     //--Data------------------------------------------------------------------------------------------------
-    std::vector<std::pair<int,int>> mObservedPoints;    // A set of test points that correspond to obstacles
-    std::vector<std::pair<int,int>> mNotObservedPoints; // A set of test points that correspond to free space
+    std::vector<std::pair<int,int> > mObservedPoints;    // A set of test points that correspond to obstacles
+    std::vector<std::pair<int,int> > mNotObservedPoints; // A set of test points that correspond to free space
    
     //--Helper Functions------------------------------------------------------------------------------------
     
