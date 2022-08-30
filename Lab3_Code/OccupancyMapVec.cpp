@@ -1,13 +1,14 @@
 #include "OccupancyMapVec.h"
 
-std::string COccupancyMapHash::GetNameOfApproach(){
+std::string COccupancyMapVec::GetNameOfApproach(){
     std::string approach = "2D Vector";
     return approach;
 }
-void COccupancyMapHash::AddOccupiedLocation(std::pair<int,int> Location){
+void COccupancyMapVec::AddOccupiedLocation(std::pair<int,int> Location){
+    vec[Location.first][Location.second] = true;
 
 }
 
-bool COccupancyMapHash::CheckIsOccupied( std::pair<int,int> Location ){
-    return false;
+bool COccupancyMapVec::CheckIsOccupied( std::pair<int,int> Location ){
+    return vec[Location.first][Location.second];
 }
