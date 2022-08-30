@@ -23,6 +23,7 @@
 #include <string>
 #include <utility>        // std::pair
 #include <vector>
+#include <iostream>
 
 //----------------------------------------------------------------------------------------------------------
 // Base class for an occupancy map.

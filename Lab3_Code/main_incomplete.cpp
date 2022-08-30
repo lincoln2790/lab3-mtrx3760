@@ -1,38 +1,16 @@
-
-// a start on a test file for developing your occupancy maps
-
-
 #include "OccupancyMapHash.h"
 #include "OccupancyMapVec.h"
 #include <iostream>
 
 //-----------------------------------------------------------------------------
-int main()
-{
-
-  // Test basic functionality, development purposes only; remove before shipping
-  // {
-  //   COccupancyMapHash myOccupancyMap;
-
-  //   std::pair<int,int> TestLocation = std::make_pair(3, 4);
-  //   myOccupancyMap.AddOccupiedLocation( TestLocation );
-    
-  //   std::cout << "Location: " << TestLocation.first << " " << TestLocation.second << " returns ";
-  //   std::cout << myOccupancyMap.CheckIsOccupied( TestLocation ) << std::endl; 
-    
-  //   TestLocation.first = 0;
-  //   std::cout << "Location: " << TestLocation.first << " " << TestLocation.second << " returns ";
-  //   std::cout << myOccupancyMap.CheckIsOccupied( TestLocation ) << std::endl; 
-  // }
-
-  {
-    // More comprehensive test
-    COccupancyMapHash myMap;
-    myMap.EvalPerformance( "ExampleObservations_Small.txt", "ExampleNotObserved_Small.txt" );
-    COccupancyMapVec myMap2;
-    myMap2.EvalPerformance( "ExampleObservations_Small.txt", "ExampleNotObserved_Small.txt" );
-  }
-
+int main(){
+  // Comprehensive test
+  // A single instance of each derived class is created, and its performance is evaluated.
+  COccupancyMapHash myMapHash;
+  myMapHash.EvalPerformance( "ExampleObservations_Small.txt", "ExampleNotObserved_Small.txt" );
+  COccupancyMapVec myMap2DVec;
+  myMap2DVec.EvalPerformance( "ExampleObservations_Small.txt", "ExampleNotObserved_Small.txt" );
+  
   return 0;
 }
 
