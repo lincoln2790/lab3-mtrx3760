@@ -1,3 +1,4 @@
+// OccupancyMapHash.h
 #ifndef _OCCUPANCYMAPHASH_H
 #define _OCCUPANCYMAPHASH_H
 #include "OccupancyMapBase.h"
@@ -5,9 +6,9 @@
 
 // A new hash function was created, since the built in hash function cannot operate on pairs
 struct pair_hash{
-    template <class T1, class T2>
-    std::size_t operator() (const std::pair<T1, T2> &pair) const {
-        return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
+    std::size_t operator() (const std::pair<int, int> &pair) const {
+    // This function returns the bitwise XOR of the two pair values
+        return std::hash<int>()(pair.first) ^ std::hash<int>()(pair.second);
     }
 };
 

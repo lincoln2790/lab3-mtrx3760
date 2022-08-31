@@ -1,4 +1,4 @@
-
+// OccupancyMapHash.cpp
 #include "OccupancyMapHash.h"
 
 std::string COccupancyMapHash::GetNameOfApproach(){

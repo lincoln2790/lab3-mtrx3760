@@ -1,4 +1,4 @@
-// OccupancyMap_Base.h
+// OccupancyMapBase.h
 //
 // Base class for an occupancy map
 // 

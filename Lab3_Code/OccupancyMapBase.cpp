@@ -1,4 +1,4 @@
-// OccupancyMap_Base.cpp
+// OccupancyMapBase.cpp
 //
 // Base class for an occupancy map
 // 

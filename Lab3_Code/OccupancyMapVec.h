@@ -1,8 +1,9 @@
+// OccupancyMapVec.h
 #ifndef _OCCUPANCYMAPVEC_H
 #define _OCCUPANCYMAPVEC_H
 #include "OccupancyMapBase.h"
 #include <vector>
-#include <fstream>
+
 
 // Derived class for 2d vector method
 class COccupancyMapVec: public COccupancyMapBase{
@@ -15,7 +16,7 @@ class COccupancyMapVec: public COccupancyMapBase{
             vec.resize(n, std::vector<bool>(n, false));
         }
     private:
-        const int n = 241; 
+        const int n = 2048; 
         //size n is defined as a constant, change value depending on input files
         std::vector<std::vector<bool> > vec;
         //vec is a 2d vector of bools with true for an occupied space, false for unoccupied
