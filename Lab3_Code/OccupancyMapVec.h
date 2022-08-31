@@ -1,4 +1,5 @@
 // OccupancyMapVec.h
+// includes the derived class declaration for the 2d vector method
 #ifndef _OCCUPANCYMAPVEC_H
 #define _OCCUPANCYMAPVEC_H
 #include "OccupancyMapBase.h"

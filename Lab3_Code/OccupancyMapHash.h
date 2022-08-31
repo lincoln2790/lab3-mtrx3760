@@ -1,8 +1,10 @@
 // OccupancyMapHash.h
+// includes the class declaration and hash function used for the hash method
 #ifndef _OCCUPANCYMAPHASH_H
 #define _OCCUPANCYMAPHASH_H
 #include "OccupancyMapBase.h"
 #include <unordered_map>
+
 
 // A new hash function was created, since the built in hash function cannot operate on pairs
 struct pair_hash{

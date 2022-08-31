@@ -1,4 +1,5 @@
-// OccupancyMapVec.h
+// OccupancyMapVec.cpp
+// includes function implementation for the vector method
 #include "OccupancyMapVec.h"
 
 std::string COccupancyMapVec::GetNameOfApproach(){

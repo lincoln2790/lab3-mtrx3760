@@ -1,4 +1,5 @@
 // main_incomplete.cpp
+// Includes testing of the Hash and 2D vector method
 #include "OccupancyMapHash.h"
 #include "OccupancyMapVec.h"
 #include <iostream>

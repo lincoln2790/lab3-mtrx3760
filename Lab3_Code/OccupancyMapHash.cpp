@@ -1,5 +1,6 @@
 // OccupancyMapHash.cpp
 #include "OccupancyMapHash.h"
+// Includes hash derived class function implementation
 
 std::string COccupancyMapHash::GetNameOfApproach(){
     std::string approach = "HashTable";
